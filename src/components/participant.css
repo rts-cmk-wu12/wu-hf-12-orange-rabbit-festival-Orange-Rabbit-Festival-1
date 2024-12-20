@@ -1,37 +1,4 @@
-/*.participant-container {
-    background-color: #FFFFFF;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
- 
- 
-    height: 825px;
-    width: 440px;
-    margin-left: 1em;
-    background-color: #FFFFFF;
-}
- 
-.participant-heading {
-    margin-top: 5em;
-    margin-left: 1em;
-    margin-right: 1em;
-}
- 
- 
-ul {
-    padding: 0 1em;
-}
- 
-li {
-    list-style: none;
-    margin-bottom: 2.5em;
-}
- 
- 
-.delete-icon {
-    border: none;
-}*/
-/* src/components/participant.css */
+
 .participant-container {
     display: flex;
     flex-direction: column;
@@ -83,10 +50,7 @@ li {
     border: none;
     color: white;
     font-size: 1em;
-    cursor: pointer;
- 
-   
-   
+    cursor: pointer;  
    
 }
  

@@ -7,26 +7,7 @@ const ParticipantsList = () => {
   const { participants, removeParticipant } = useContext(ParticipantsContext);
   const navigate = useNavigate();
  
-  /*const handleSubmit = async () => {
-    try {
-      const response = await fetch('https://api.example.com/submit', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(participants),
-      });
- 
-      if (response.ok) {
-        alert('Data submitted successfully!');
-      } else {
-        alert('Failed to submit data');
-      }
-    } catch (error) {
-      console.error('Error:', error);
-      alert('An error occurred while submitting the data');
-    }
-  };*/
+
   function navigateToConfirmation() {
     navigate('/Confirmation');
   }
