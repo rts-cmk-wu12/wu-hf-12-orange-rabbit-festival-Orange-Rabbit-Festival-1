@@ -1,0 +1,279 @@
+@import url('./animations.css');
+
+body {
+    background-image: url("/src/images/blurbackground.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-container {
+    animation: flyIn 1s ease-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.main-container img {
+    width: 710px;
+}
+
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+    padding: 1.75rem;
+    max-width: 500px;
+    width: 100%;
+    background-color: white;
+}
+
+
+
+.dashed-border-line {
+    border-bottom: 1px dashed #ccc;
+    width: 500px;
+}
+
+
+.signup-text {
+    font-size: 0.875rem;
+    font-weight: 600;
+
+}
+
+.title-text {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.date-text {
+    align-items: center;
+    display: flex;
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.address-text {
+    align-items: center;
+    display: flex;
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.form-header-icon {
+    font-size: 1.2em;
+    margin-right: 5px;
+}
+
+.form-container {
+    font-family: 'Open Sans', sans-serif;
+    padding: 2rem;
+    max-width: 400px;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+
+.form-group input::placeholder {
+    color: #999
+}
+
+
+.form-group input:focus {
+    outline: none;
+    transition-duration: 400ms;
+    border-color: orange;
+
+}
+
+.error {
+    color: #dc3545;
+    font-size: 0.8rem;
+}
+
+button[type="submit"] {
+    display: flex;
+    align-items: center;
+    background-color: #FF6B00;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.9rem;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.form-icon-plus {
+    font-size: 1.2em;
+
+}
+
+button[type="submit"]:hover {
+    transition-duration: 600ms;
+    translate: 5em;
+    background-color: orange;
+}
+
+/* Participants */
+
+.participant-wrapper {
+    background-color: white;
+    min-height: 58vh;
+}
+
+.participants {
+    font-family: 'Open Sans';
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.participant-header {
+    padding: 1em;
+    background-color: white;
+}
+
+
+.participant-card {
+    background-color: white;
+    padding: 1.5rem;
+}
+
+
+.participant-card h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.participant-card p {
+    color: grey;
+    font-size: 1rem;
+}
+
+.no-participants {
+    color: lightgrey;
+}
+
+
+.delete-btn {
+    background-color: white;
+    color: grey;
+    border: none;
+    padding: 0.5rem;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.delete-btn:hover {
+    color: #ff0000;
+    transition-duration: 500ms;
+}
+
+.participant-card {
+    position: relative;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    border-bottom: 1px dashed #ccc;
+}
+
+.participant-footer {
+    background-color: white;
+    position: absolute;
+    bottom: 95px;
+    width: 25.5%;
+}
+
+.footer-link {
+    width: 100%;
+    display: flex;
+    padding: 1.5rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Complete Page */
+
+
+.complete-wrapper {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 2rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.complete-wrapper small {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.complete-wrapper img {
+    width: 60px;
+    height: 60px;
+    animation: checkmark 0.8s ease-in-out;
+}
+
+.complete-container {
+    background-color: white;
+    padding: 3rem;
+    max-width: 220px;
+}
+
+
+.complete-wrapper h1 {
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+
+.complete-wrapper p {
+    font-size: 0.7em;
+}
+
+.complete-wrapper button {
+    background-color: #ff6b00;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 40px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.complete-wrapper button:hover {
+    background-color: orange;
+}
