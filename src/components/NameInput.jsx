@@ -6,7 +6,7 @@ export default function NameInput( props ) {
  
     const inputElement = useRef(null)
    
-    const regExIcludesNumber = /\d/
+    const regExIncludesNumber = /\d/
    
     function changeHandler() {
        
@@ -14,7 +14,7 @@ export default function NameInput( props ) {
  
         if (value.length < 2) {
             setError('Name must be two letters or longer.')
-        } else if (value.match(regExIcludesNumber)) {
+        } else if (value.match(regExIncludesNumber)) {
             setError('Name must not contain numbers.')
         } else {
             setError(false)

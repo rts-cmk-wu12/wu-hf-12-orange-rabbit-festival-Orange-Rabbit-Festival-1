@@ -57,7 +57,7 @@ export default function Signup() {
           <button className='add-button' type="submit">Add Participant<img className='plus' src="/images/vector.png" alt="" /></button>
         </form>
       </div>
-      <ParticipantsList /> {/* Include the ParticipantsList component */}
+      <ParticipantsList /> {}
     </div>
   );
 }

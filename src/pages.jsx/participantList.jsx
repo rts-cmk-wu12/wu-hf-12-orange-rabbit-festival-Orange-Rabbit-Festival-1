@@ -28,7 +28,7 @@ export default function ParticipantsList() {
  
       const result = await response.json();
       console.log('Success:', result);
-      clearParticipants(); // Clear participants after successful submission
+      clearParticipants(); 
     } catch (error) {
       console.error('Error:', error);
     }
