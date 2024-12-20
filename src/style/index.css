@@ -3,37 +3,28 @@
 body {
     background-image: url("/src/images/blurbackground.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    box-sizing: border-box;
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    max-height: 100vh;
 }
 
 .main-container {
     animation: flyIn 1s ease-out;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
+    
 }
-
-.main-container img {
-    width: 710px;
-}
-
 
 .form-wrapper {
-    display: flex;
-    flex-direction: column;
+    
     font-family: 'Open Sans', sans-serif;
     padding: 1.75rem;
-    max-width: 500px;
-    width: 100%;
     background-color: white;
 }
 
-
-
 .dashed-border-line {
     border-bottom: 1px dashed #ccc;
-    width: 500px;
 }
 
 
@@ -73,7 +64,6 @@ body {
 .form-container {
     font-family: 'Open Sans', sans-serif;
     padding: 2rem;
-    max-width: 400px;
 }
 
 .form-group {
@@ -81,7 +71,6 @@ body {
 }
 
 .form-group label {
-    display: block;
     margin-bottom: 0.5rem;
     font-weight: 500;
 }
@@ -123,7 +112,6 @@ button[type="submit"] {
     cursor: pointer;
     font-weight: 600;
     font-size: 0.9rem;
-    width: 50%;
     justify-content: space-between;
 }
 
@@ -140,12 +128,8 @@ button[type="submit"]:hover {
 
 /* Participants */
 
-.participant-wrapper {
-    background-color: white;
-    min-height: 58vh;
-}
-
 .participants {
+    background-color: white;
     font-family: 'Open Sans';
     padding: 1rem;
     display: flex;
@@ -154,12 +138,10 @@ button[type="submit"]:hover {
 
 .participant-header {
     padding: 1em;
-    background-color: white;
 }
 
 
 .participant-card {
-    background-color: white;
     padding: 1.5rem;
 }
 
@@ -185,7 +167,6 @@ button[type="submit"]:hover {
     border: none;
     padding: 0.5rem;
     font-size: 20px;
-    border-radius: 5px;
     cursor: pointer;
     position: absolute;
     top: 1rem;
@@ -206,13 +187,9 @@ button[type="submit"]:hover {
 
 .participant-footer {
     background-color: white;
-    position: absolute;
-    bottom: 95px;
-    width: 25.5%;
 }
 
 .footer-link {
-    width: 100%;
     display: flex;
     padding: 1.5rem;
     color: white;
@@ -242,9 +219,10 @@ button[type="submit"]:hover {
     font-weight: 600;
 }
 
-.complete-wrapper img {
+.complete-wrapper .check-mark {
     width: 60px;
     height: 60px;
+    color: #FF6B00;
     animation: checkmark 0.8s ease-in-out;
 }
 

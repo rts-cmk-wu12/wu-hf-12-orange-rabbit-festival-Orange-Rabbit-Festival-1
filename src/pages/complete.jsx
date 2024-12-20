@@ -1,11 +1,12 @@
 import '../style/index.css'
+import { FaCheckCircle } from "react-icons/fa";
 
 export default function Home() {
     return (
         <div className="complete-wrapper">
             <div className='complete-container'>
             <div>
-                <img src="\src\images\complete.png" alt="" />
+            <FaCheckCircle className='check-mark' />
             </div>
             <div>
                 <small>CONFIRMATION</small>

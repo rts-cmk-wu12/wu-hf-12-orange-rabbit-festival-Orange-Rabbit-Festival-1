@@ -10,6 +10,7 @@ const Participants = () => {
         const handleStorageChange = () => {
             const storedData = localStorage.getItem('formData');
             if (storedData) {
+                const parsedData = JSON.parse(storedData);
                 setParticipants([JSON.parse(storedData)]);
             }
         };
@@ -24,7 +25,7 @@ const Participants = () => {
             clearInterval(storageCheckInterval);
         };
     }, []);
-
+        
     return (
         <div className='participant-wrapper'>
             <div className="participant-container">
